@@ -1,10 +1,10 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
+import img1 from "./assets/residencialCleaning.webp";
+import img2 from "./assets/officeCleaning.webp";
 // TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
+import img3 from "./assets/DeepCleaning.jpg";
+import img4 from "./assets/PostConstructionCleaning.webp";
 // TODO
-import img5 from "./assets/smart-grid.png";
+import img5 from "./assets/CarpetUpholsteryCleaning.jpg";
 import img6 from "./assets/green.png";
 
 export const servicesSectionData = {
