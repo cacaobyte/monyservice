@@ -1,45 +1,22 @@
 ---
-import Container from "../components/shared/Container.astro";
 import Navitem from "../components/shared/Navitem.astro";
 import BtnLink from "../components/shared/BtnLink.astro";
 import BtnThemeSwitch from "../components/shared/BtnThemeSwitch.astro";
 
 const navItems = [
-  {
-    href: "#",
-    text: "Home",
-  },
-  // {
-  //   href: "#hero",
-  //   text: "Hero",
-  // },
-  {
-    href: "#services",
-    text: "Services",
-  },
-  {
-    href: "#innovations",
-    text: "Innovations",
-  },
-  {
-    href: "#testimonials",
-    text: "Testimonials",
-  },
-  {
-    href: "#environment",
-    text: "Environment",
-  },
-  {
-    href: "#projects",
-    text: "Projects",
-  },
+  { href: "#", text: "Home" },
+  { href: "#services", text: "Services" },
+  { href: "#innovations", text: "Innovations" },
+  { href: "#testimonials", text: "Testimonials" },
+  { href: "#environment", text: "Environment" },
+  { href: "#projects", text: "Projects" },
 ];
 ---
 
 <header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200 dark:bg-base-dark-800/90 dark:border-base-dark-700">
-  <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-6">
+  <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-6 relative">
     
-    <!-- Logo y nombre -->
+    <!-- Logo -->
     <a href="/" class="flex items-center gap-3 group transition-all">
       <div class="h-12 w-12 rounded-full bg-white ring-2 ring-primary shadow-lg overflow-hidden">
         <img
@@ -53,7 +30,7 @@ const navItems = [
       </span>
     </a>
 
-    <!-- Navegación -->
+    <!-- Desktop nav -->
     <div class="hidden lg:flex items-center gap-6">
       <ul class="flex gap-6 text-sm font-medium text-heading-2">
         {
@@ -63,30 +40,53 @@ const navItems = [
         }
       </ul>
 
-      <!-- Botón CTA -->
       <BtnLink
         text="Get Started"
         href="#cta"
-        className="ml-6 text-sm"
+        className="ml-6 text-sm hidden lg:block"
         variant="cta"
       />
     </div>
 
-    <!-- Mobile / Theme toggle -->
+    <!-- Mobile theme + toggle -->
     <div class="flex items-center gap-3 lg:hidden">
       <BtnThemeSwitch variant="primary" />
-      <!-- Mobile nav toggle button -->
       <button
-        data-toggle-nav
-        data-open-nav="false"
+        id="mobileToggle"
+        aria-label="Toggle navigation"
         class="outline-none w-7 h-auto flex flex-col relative"
       >
-        <span class="w-6 h-0.5 rounded-full bg-heading-2 transition-all"></span>
-        <span class="w-6 h-0.5 mt-1 rounded-full bg-heading-2 transition-all"></span>
-        <span class="w-6 h-0.5 mt-1 rounded-full bg-heading-2 transition-all"></span>
+        <span class="w-6 h-0.5 rounded-full bg-black dark:bg-white transition-all"></span>
+        <span class="w-6 h-0.5 mt-1 rounded-full bg-black dark:bg-white transition-all"></span>
+        <span class="w-6 h-0.5 mt-1 rounded-full bg-black dark:bg-white transition-all"></span>
         <span class="sr-only">Toggle navigation</span>
       </button>
     </div>
-  </nav>
-</header>
 
+<!-- Mobile nav -->
+<div
+  id="mobileNav"
+  class="hidden absolute top-full left-0 w-full flex-col items-center bg-white dark:bg-base-dark-800 px-6 py-6 shadow-md lg:hidden z-40 animate-fade-in"
+>
+  <ul class="flex flex-col gap-5 text-base font-medium text-gray-800 dark:text-white text-center">
+    {
+      navItems.map((item) => {
+        return <Navitem {...item} />;
+      })
+    }
+  </ul>
+</div>
+
+
+  <!-- JS toggle script -->
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("mobileToggle");
+      const mobileNav = document.getElementById("mobileNav");
+
+      toggle.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    });
+  </script>
+</header>
