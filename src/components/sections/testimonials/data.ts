@@ -5,31 +5,32 @@ import img3 from "./assets/person3.png";
 export const testimonialsSection = {
   title: "What Our Customers Say",
   subheading1_1: "Hear from Those",
-  subheading1_2: " Who Have Embraced Sustainable Living",
+  subheading1_2: " Who Trust Monica Cleaning Service",
   testimonials: [
     {
       name: "Emily Johnson",
       visual: img1,
       occupation: "Homeowner",
       quote:
-        "Switching to [Company Name] was the best decision I made. Our home is now powered by clean energy, and I feel great knowing I'm contributing to a healthier planet.",
+        "Monica Cleaning Service has completely transformed how clean my house feels. Their attention to detail is incredible, and I love that they use safe, eco-friendly products.",
     },
     {
       name: "Carlos Rodriguez",
       visual: img2,
-      occupation: "Business Owner",
+      occupation: "Office Manager",
       quote:
-        "As a business owner, sustainability is crucial. [Company Name] provided us with a seamless transition to green energy, and we've seen a positive impact on both the environment and our operating costs.",
+        "We hired Monica Cleaning Service for our office and have been thrilled with the results. The team is professional, punctual, and leaves everything spotless every single time.",
     },
     {
       name: "Sophie Chen",
       visual: img3,
-      occupation: "Environmental Advocate",
+      occupation: "Busy Mom",
       quote:
-        "I'm passionate about the environment, and [Company Name] aligns perfectly with my values. Their commitment to renewable energy and reducing carbon footprint is commendable.",
+        "As a mom of three, having a reliable cleaning service is a lifesaver. Monica Cleaning Service is consistent, trustworthy, and always leaves my home fresh and organized.",
     },
+    
   ],
   visual: "customer-testimonials-image.jpg",
-  callToAction: "Join Our Growing Community of Satisfied Customers",
-  button: "Get Started",
+  callToAction: "Join Our Growing Community of Satisfied Clients",
+  button: "Get a Free Quote",
 };
