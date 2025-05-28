@@ -1,59 +1,54 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
+import img1 from "./assets/residencialCleaning.webp";
+import img2 from "./assets/officeCleaning.webp";
 // TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
+import img3 from "./assets/DeepCleaning.jpg";
+import img4 from "./assets/PostConstructionCleaning.webp";
 // TODO
-import img5 from "./assets/smart-grid.png";
+import img5 from "./assets/CarpetUpholsteryCleaning.jpg";
 import img6 from "./assets/green.png";
 
 export const servicesSectionData = {
-  title: "Our Sustainable Energy Solutions",
+  title: "Our Cleaning Services",
   subheading: {
-    text1_1: "Experience a Revolution in Energy Solutions - ",
-    text1_2: "Embrace Innovation, Embrace Sustainability.",
+    text1_1: "Professional Cleaning for Every Space - ",
+    text1_2: "Reliable, Efficient, and Spotless.",
     text2:
-      "We're here to Empower Your Life and Spaces with Clean, Renewable Energy, Paving the Way for a Brighter and Greener Tomorrow.",
+      "At Monica Cleaning Service, we take pride in offering high-quality cleaning solutions tailored to homes and businesses alike.",
   },
   services: [
     {
-      title: "Solar Power Solutions",
+      title: "Residential Cleaning",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
+        "Keep your home fresh and spotless with our routine and deep cleaning services, customized to your lifestyle.",
       visual: img1,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "Office Cleaning",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
+        "Maintain a clean and productive workspace with our professional office cleaning tailored to your schedule.",
       visual: img2,
     },
     {
-      title: "Hydropower Systems",
+      title: "Deep Cleaning",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
+        "Tackle built-up grime and neglected spaces with our intensive deep cleaning for a total refresh.",
       visual: img3,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "Post-Construction Cleaning",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
+        "We remove dust, debris, and residue after renovations or construction, leaving your space move-in ready.",
       visual: img4,
     },
     {
-      title: "Smart Grid Technology",
+      title: "Carpet & Upholstery Cleaning",
       briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
+        "Extend the life of your carpets and furniture with professional stain removal and steam cleaning.",
       visual: img5,
     },
-    {
-      title: "Energy-efficient Lighting",
-      briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
-      visual: img6,
-    },
+
   ],
   callToAction:
-    "Discover the Future of Green Energy. Choose Your Sustainable Solution Today!",
-  buttonText: "Explore More",
+    "Let us do the dirty work. Choose Monica Cleaning Service for a cleaner tomorrow!",
+  buttonText: "View All Services",
 };

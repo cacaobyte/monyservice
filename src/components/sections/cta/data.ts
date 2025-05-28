@@ -1,33 +1,30 @@
-import svg1 from "./assets/green-1.svg?raw";
-import svg2 from "./assets/green-2.svg?raw";
-import svg3 from "./assets/green-3.svg?raw";
-import svg4 from "./assets/green-4.svg?raw";
+
 
 export const getInvolvedSection = {
-  title: "Get Involved",
-  subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  title: "Why Choose Us",
+  subheading1_1: "Join Hundreds of Happy Clients",
+  subheading1_2: "Who Trust Monica Cleaning Service",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Reliable and Professional",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
-      visual: svg2,
+        "Our team shows up on time, fully equipped, and ready to deliver top-tier cleaning services for homes and businesses—every single time.",
+      visual: "",
     },
     {
-      title: "Green Events",
+      title: "Tailored Cleaning Solutions",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
-      visual: svg4,
+        "From deep cleaning to post-construction or carpet care, we customize our services to meet your exact needs and expectations.",
+      visual: "",
     },
     {
-      title: "Partnerships for Sustainability",
+      title: "Customer Satisfaction First",
       description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
-      visual: svg3,
+        "We go the extra mile to ensure every client is satisfied. Your space will look spotless—and you’ll feel the difference.",
+      visual: "",
     },
   ],
   visual: "get-involved-section-image.jpg",
-  callToAction: "Take Action Today for a Greener Tomorrow",
-  button: "Join Our Initiatives",
+  callToAction: "Let’s Make Your Space Shine",
+  button: "Request a Free Quote",
 };
