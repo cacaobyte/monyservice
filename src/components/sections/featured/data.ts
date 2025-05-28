@@ -1,34 +1,34 @@
-import img1 from "./assets/solar-person.png";
-import img2 from "./assets/wind-person.png";
-import img3 from "./assets/amazonas2.png";
+import img1 from "./assets/cleaningessentials.webp";
+import img2 from "./assets/officemaintenance.jpg";
+import img3 from "./assets/limpiezaconstruccion.jpg";
 
 export const projectsSection = {
   title: "Featured Projects",
-  subheading1_1: "Explore Our Successful ",
-  subheading1_2: "Green Energy Endeavors",
+  subheading1_1: "Discover our ",
+  subheading1_2: "cleaning solutions in action",
   projects: [
     {
-      title: "Solar-Powered Community",
+      title: "Premium Residential Cleaning",
       description:
-        "Empowering a community with sustainable solar energy solutions. Learn how [Company Name] brought clean and affordable electricity to homes, schools, and businesses.",
-      location: "Los Angeles, California, USA",
+        "We delivered a full-service residential cleaning for a large home, focusing on kitchens, bathrooms, common areas, and general organization—ensuring spotless spaces for the entire family.",
+      location: "",
       visual: img1,
     },
     {
-      title: "Wind Farm Innovation",
+      title: "Corporate Office Maintenance",
       description:
-        "Revolutionizing wind energy with our innovative wind farm. Discover how [Company Name] is harnessing the power of the wind to create a greener and more sustainable future.",
-      location: "Scottish Highlands, United Kingdom",
+        "We provided daily cleaning services for a corporate office, focusing on desks, meeting rooms, and shared spaces—creating a clean, professional, and healthy work environment.",
+      location: "",
       visual: img2,
     },
     {
-      title: "Hydropower Plant Success",
+      title: "Post-Construction Cleaning",
       description:
-        "A journey into our hydropower success story. Explore how [Company Name] transforms the energy of flowing water into a reliable and eco-friendly power source.",
-      location: "Amazon Rainforest, South America",
+        "Our team performed a deep clean after a renovation project—removing dust, debris, and tough stains—leaving the space move-in ready and spotless.",
+      location: "",
       visual: img3,
     },
   ],
-  callToAction: "Embark on a Green Energy Journey with [Company Name]",
+  callToAction: "Trust Monica Cleaning Service with your cleaning needs",
   button: "View More Projects",
 };

@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import heroImg from "./assets/wind3.jpg";
+import heroImg from "./assets/cleanService.jpg";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -8,14 +8,14 @@ import Title from "../../shared/Title.astro";
 import LazyImage from "../../shared/LazyImage.astro";
 
 const heroSection = {
-  headline1: "Powering",
-  headline2: "Tomorrow,",
-  headline3: "Sustainably",
-  headline4: "Today!",
-  subheading1: "Join us in the green energy revolution",
-  subheading2: "and be part of a sustainable future",
-  subheading3: "for generations to come.",
-  buttonText: "Get Powered Today!",
+  headline1: "Transforming",
+  headline2: "Spaces,",
+  headline3: "Sparkling",
+  headline4: "Clean!",
+  subheading1: "Expert cleaning services for homes and businesses.",
+  subheading2: "Reliable, affordable, and always spotless.",
+  subheading3: "Let us do the cleaning — so you don’t have to.",
+  buttonText: "Get a Free Quote!",
   backgroundImage: "hero-background-image.jpg",
 };
 
@@ -47,14 +47,20 @@ const { className = "" } = Astro.props;
           {heroSection.subheading3}
         </SubTitle>
         <div class="pt-10">
+        <a
+          href="https://wa.me/17043109302?text=Hello,%20I'm%20interested%20in%20your%20cleaning%20services.%20I%20would%20like%20to%20know%20the%20prices%20and%20available%20days."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <CtaButton>{heroSection.buttonText}</CtaButton>
+        </a>
         </div>
       </div>
       <div class="flex relative pt-10 md:p-0">
         <LazyImage
           src={heroImg}
           alt="A picture of a wind turbine."
-          className="w-full h-full object-cover"
+          className="w-auto h-full object-cover"
         />
         <svg
           class="fill-base-100 dark:fill-base-dark-900 z-10 absolute top-0 start-0 h-full hidden md:block"
