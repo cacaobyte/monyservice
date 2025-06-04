@@ -7,6 +7,7 @@ import Hero from "../components/sections/hero/Hero.astro";
 import KeyServices from "../components/sections/services/KeyServices.astro";
 import LatestInnovations from "../components/sections/innovations/LatestInnovations.astro";
 import Layout from "../layouts/Layout.astro";
+import Transformation from "../components/sections/transformations/Transformations.astro";
 ---
 
 <Layout title="Welcome to the Agency Monica Cleaning Services">
@@ -44,6 +45,9 @@ import Layout from "../layouts/Layout.astro";
     <!-- Showcase successful green energy projects your company has undertaken. -->
     <!-- Provide details on the impact and success of these projects. -->
     <!-- Encourage users to explore more about your company's achievements. -->
+
+    <Transformation client:load />
+
 
     <GetInvolved />
     <!-- Get Involved Section: -->

@@ -1,11 +1,11 @@
 import img1 from "./assets/residencialCleaning.webp";
 import img2 from "./assets/officeCleaning.webp";
-// TODO
 import img3 from "./assets/DeepCleaning.jpg";
 import img4 from "./assets/PostConstructionCleaning.webp";
-// TODO
 import img5 from "./assets/CarpetUpholsteryCleaning.jpg";
 import img6 from "./assets/green.png";
+import img7 from "./assets/pintura.jpeg";
+import img8 from "./assets/exteriorPintura.jpg";
 
 export const servicesSectionData = {
   title: "Our Cleaning Services",
@@ -45,6 +45,18 @@ export const servicesSectionData = {
       briefDescription:
         "Extend the life of your carpets and furniture with professional stain removal and steam cleaning.",
       visual: img5,
+    },
+        {
+      title: "Interior Painting",
+      briefDescription:
+        "Refresh your walls with smooth, clean finishes in your favorite colors. Ideal for living rooms, bedrooms, and more.",
+      visual: img7,
+    },
+    {
+      title: "Exterior Painting",
+      briefDescription:
+        "Boost curb appeal with durable and weather-resistant paint for exteriors — perfect for homes and businesses.",
+      visual: img8,
     },
 
   ],

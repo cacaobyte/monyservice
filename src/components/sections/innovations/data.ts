@@ -1,6 +1,7 @@
 import imgGrid from "./assets/ecoCleaning.png";
 import imgSolar from "./assets/plan.png";
 import imgWind from "./assets/profesional.png";
+import imgEcoPaint from "./assets/pintura.jpeg";
 
 export const innovationsSection = {
   title: "Innovations in Cleaning",
@@ -26,6 +27,16 @@ export const innovationsSection = {
         "All of our cleaning staff receive ongoing training and use industry-leading tools and techniques. This ensures the highest standards of cleanliness, safety, and customer satisfaction.",
       visual: imgWind,
     },
+    
+{
+  title: "Professional Painting Services",
+  description:
+    "We offer high-quality painting for interiors and exteriors, with a focus on precision, clean lines, and durable finishes—perfect for renovations, touch-ups, or complete transformations.",
+  visual: imgEcoPaint,
+}
+
+
+    
   ],
   visual: "innovations-section-image.jpg",
   callToAction: "Discover the Future of Cleaning with Monica Cleaning Service",
