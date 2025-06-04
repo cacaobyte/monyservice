@@ -1,6 +1,9 @@
 import img1 from "./assets/cleaningessentials.webp";
 import img2 from "./assets/officemaintenance.jpg";
 import img3 from "./assets/limpiezaconstruccion.jpg";
+import img4 from "./assets/pintura-exteriores.jpg";
+import img5 from "./assets/pintura1.jpeg";
+import img6 from "./assets/eco_friendly1.webp";
 
 export const projectsSection = {
   title: "Featured Projects",
@@ -28,6 +31,28 @@ export const projectsSection = {
       location: "",
       visual: img3,
     },
+        {
+      title: "Exterior Painting for Commercial Property",
+      description:
+        "We revitalized the exterior of a commercial building with durable, weather-resistant paint—enhancing curb appeal and protection.",
+      location: "",
+      visual: img4,
+    },
+    {
+      title: "Interior Painting Transformation",
+      description:
+        "Our team refreshed the interior of a residential space with a clean, modern color palette, creating a bright and welcoming atmosphere.",
+      location: "",
+      visual: img5,
+    },
+    {
+      title: "Eco-Friendly Deep Cleaning",
+      description:
+        "Using green-certified products, we provided a thorough cleaning for an eco-conscious client, ensuring safety for family and environment.",
+      location: "",
+      visual: img6,
+    },
+
   ],
   callToAction: "Trust Monica Cleaning Service with your cleaning needs",
   button: "View More Projects",
