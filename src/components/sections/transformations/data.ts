@@ -9,6 +9,7 @@ import after4 from "./assets/washbasinAfter.jpeg";
 import before5 from "./assets/windowBefore.jpeg";
 import after5 from "./assets/windowAfter.jpeg";
 import after6 from "./assets/House.jpeg";
+import before6 from "./assets/House.jpeg";
 
 export const transformationsSectionData = {
   title: "Visual Transformations",
@@ -52,7 +53,7 @@ export const transformationsSectionData = {
         {
       title: "Full Apartment Cleaning",
       description: "From floors to fixtures, this living space was cleaned and polished to perfection — showcasing our attention to detail and high standards.",
-      before: after6,
+      before: before6,
       after: after6,
     },
   ],
