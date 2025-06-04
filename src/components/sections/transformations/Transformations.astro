@@ -1,0 +1,19 @@
+---
+import { transformationsSectionData } from "./data";
+import TransformationCard from "./components/TransformationCard.astro";
+---
+
+<section id="transformation" class="max-w-7xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-center text-white mb-4">{transformationsSectionData.title}</h2>
+  <p class="text-center text-gray-400 mb-2">
+    {transformationsSectionData.subheading.text1_1}
+    <span class="text-primary">{transformationsSectionData.subheading.text1_2}</span>
+  </p>
+  <p class="text-center text-sm text-gray-500 mb-10">{transformationsSectionData.subheading.text2}</p>
+
+  <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {transformationsSectionData.transformations.map((item) => (
+      <TransformationCard client:load {...item} />
+    ))}
+  </div>
+</section>
